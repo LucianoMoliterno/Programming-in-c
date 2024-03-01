@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1514140574 source:c:\users\eaj\desktop\programacion\c_practica\tda_ej\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1581879029 source:c:\users\eaj\desktop\programacion\c_practica\tda_ej\persona.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+
+1581878920 c:\users\eaj\desktop\programacion\c_practica\tda_ej\persona.h
+
