@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1571844696 source:c:\users\leone\documents\unla\programación\c\parcial2practica5\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1571938583 source:c:\users\leone\documents\unla\programación\c\practica - parcial 2\ej 5\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1581280517 source:c:\users\matias\google drive\unla\primer año\programacion\parciales\practica - parcial 2\ej 5(moneda - completo)\ej 5\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

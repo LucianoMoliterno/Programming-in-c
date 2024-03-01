@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1580443149 source:c:\users\matias\desktop\estudio para final\estructuras anidadas\estructurasanidadas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

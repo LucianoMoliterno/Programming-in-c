@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1579834475 source:c:\users\matias\desktop\estudio para final\busqueda secuencial\bsecuencial\main.c
+	<stdio.h>
+	<stdlib.h>
+
