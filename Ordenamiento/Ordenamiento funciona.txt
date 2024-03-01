@@ -1,0 +1,87 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+
+int main()
+{
+
+
+int i;
+int j;
+int aux;
+int v[10];
+
+//Rand init. Ignorar
+    srand(time(NULL));
+    //
+
+
+
+    for(i=0;i<10;i++)
+    {
+
+            v[i]=rand()%40; //Carga valores random. Hacer printf & scanf para el examen real.
+
+    }
+
+
+printf("vector sin ordenar \n \n ");
+char senial='s';
+
+
+
+      for(i=0;i<10;i++)
+    {
+
+            printf("- %d -", v[i]);
+
+    }
+printf("\n \n ");
+
+printf("vector ordenado \n \n ");
+
+
+
+for (i=0;i<10;i++)
+{
+
+    for(j=0;j<10;j++)
+    {
+
+        if(v[j]>v[j+1])
+        {
+        aux=v[j];
+        v[j]=v[j+1];
+        v[j+1]=aux;
+
+        }
+
+
+    }
+
+
+}
+
+
+for (i=0;i<10;i++)
+{
+
+    printf("--%d--",v[i]);
+
+
+}
+
+
+
+
+
+
+
+
+    return 0;
+}
+
+
