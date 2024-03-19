@@ -1,0 +1,74 @@
+#include stdio.h
+#include stdlib.h
+#include string.h
+
+
+struct estructura_diccionario_simplificado
+{
+    char palabra[30];
+    char definicion[100];
+    int num_entrada;
+};
+
+ Funciones y procedimientos
+ void cargar_datos(struct estructura_diccionario_simplificado diccionario [],int i);
+ void mostrar_datos(struct estructura_diccionario_simplificado diccionario [],int i);
+ void ordenar_datos(struct estructura_diccionario_simplificado,int i);
+ void buscar_dato(struct estructura_diccionario_simplificado, char palabra_a_buscar);
+
+int main()
+{
+
+    struct estructura_diccionario_simplificado diccionario [5];
+    int id=0;
+    printf(Ingrese cuantos datos quiere ingresarn);
+    scanf(%d,&id);
+    struct estructura_diccionario_simplificado d[id];
+   struct estructura_diccionario_simplificado d[3];
+   int id=5;
+   int i=0;
+   for(i=0;iid;i++)
+    {
+        cargar_datos(diccionario,i);
+    }
+
+    for(i=0;iid;i++)
+    {
+    mostrar_datos(diccionario,i);
+    }
+
+    return 0;
+}
+ void cargar_datos(struct estructura_diccionario_simplificado diccionario [],int i)
+ {
+     char word[30];
+     char def[100];
+     int j=0;
+
+      printf(Escriba la palabra que desea ingresar al diccionarion);
+     fflush(stdin);
+     gets(word);
+     strcpy(diccionario[i].palabra,word);
+
+     printf(Escriba su definicionn);
+     fflush(stdin);
+     gets(def);
+     strcpy(diccionario[i].definicion,def);
+    }
+ }
+
+ void mostrar_datos(struct estructura_diccionario_simplificado diccionario [],int i)
+ {
+     int j=0;
+
+     for(j=0;ji;j++)
+     {
+         puts(diccionario[i].palabra);
+         printf(n);
+         puts(diccionario[i].definicion);
+         printf(n);
+     }
+ }
+
+ void ordenar_datos(struct estructura_diccionario_simplificado,int i);
+ void buscar_dato(struct estructura_diccionario_simplificado, char palabra_a_buscar);

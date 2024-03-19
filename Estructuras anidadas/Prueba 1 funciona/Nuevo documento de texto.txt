@@ -1,0 +1,63 @@
+#include stdio.h
+#include stdlib.h
+
+struct a{ char nombre [10];};
+struct b {int numerob;};
+
+struct c {
+
+int numeroc;
+
+struct a a1;
+struct b b1;
+
+};
+
+
+
+int main()
+{
+    printf(Estructuras anidadas n );
+
+    struct c strc [2];;
+    char aux[10];
+    int auxint;
+int i;
+for (i=0;i2;i++)
+{
+ nombre
+    printf (Ingrese nombre %d n,i+1);
+    gets (aux);
+    strcpy (strc[i].a1.nombre,aux);
+    fflush(stdin);
+
+    Numero b
+    printf (Ingrese numero b %d  n,i+1);
+
+    scanf (%d,&strc[i].b1.numerob);
+    fflush(stdin);
+    Numero b
+    printf (Ingrese numero c %d n,i+1);
+    scanf (%d,&strc[i].numeroc);
+    fflush(stdin);
+
+}
+
+
+
+    printf(nombre %s  n numero b n numero c %d n,strc.a1.nombre, strc.b1.numerob, strc.numeroc);
+
+
+for (i=0;i2;i++)
+{
+  printf(n %d n nombre %s  n numero b %d  n numero c %d n ,i ,strc[i].a1.nombre, strc[i].b1.numerob,strc[i].numeroc);
+
+}
+
+
+
+
+
+
+    return 0;
+}

@@ -1,0 +1,129 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+enum menu {cargar=1,mostrar=2,salir=3}; //creacion de menu
+
+//Creacion De prototipos//
+
+void cargarmatriz (int matriz [3][3]);
+void mostrarmatriz (int matriz [3][3]);
+
+
+int main()
+{
+
+ int opcion=0;
+ int matriza [3][3];
+
+
+    printf("\t \t  ********Programa para cargar una matriz  y mostrarla mediante un menu********\n");
+
+////////////////MENU
+   while (opcion !=3) {
+
+     printf ("\n \n **********Menu Principal********** \n \n \n 1: cargar matriz \n 2: mostrar matriz \n 3: salir \n \n ");
+     scanf( "%d", &opcion );
+
+
+    switch (opcion)
+    {
+
+        case cargar: printf ("\n \n cargando... \n \n");
+                     cargarmatriz(matriza);
+                    break;
+
+        case mostrar: printf ("\n \n Mostrar... \n \n");
+                      mostrarmatriz(matriza);
+                    break;
+        case salir: printf ("\n \n Saliendo, gracias por usar \n \n");
+                    break;
+
+    }
+
+//Fin While de menu
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+    return 0;
+}
+
+
+
+void cargarmatriz (int matriz [3][3])
+{
+    int i=0;
+    int j=0;
+
+    for (i=0;i<3;i++)
+    {
+       for (j=0;j<3;j++)
+        {
+
+            printf ("\n \n introduzca numero para la casilla [%d][%d] \n ", i , j);
+            scanf ("%d", &matriz [i][j]);
+
+
+        } //for J
+
+    }// For I
+
+
+
+
+
+
+
+
+} // Fin Cargar Matriz
+
+
+
+
+
+
+void mostrarmatriz (int matriz [3][3])
+
+{
+    int i=0;
+    int j=0;
+
+    for (i=0;i<3;i++)
+    {
+       for (j=0;j<3;j++)
+        {
+
+            printf (" [%d][%d] = %d  ", i , j, matriz [i][j]);
+
+
+
+
+        } //for J
+
+    }// For I
+
+
+
+
+
+
+
+
+} // Fin Cargar Matriz
+
+
+
+
